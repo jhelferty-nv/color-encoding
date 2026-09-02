@@ -12,7 +12,7 @@ public struct YCbCrEncoding
 public YCbCrEncoding rec709LimitedRange()
 {
     YCbCrEncoding result;
-    result.lumaWeights = float3(0.213, 0.715, 0.072);
+    result.lumaWeights = float3(0.2126, 0.7152, 0.0722);
     result.lumaOffset = 16.0 / 255.0;
     result.lumaScale = 255.0 / 219.0;
     result.chromaOffset = 128.0 / 255.0;
@@ -27,5 +27,5 @@ public bool isLegalLumaSample(float encodedLuma)
 
 public int encodingRevision()
 {
-    return 100;
+    return 110;
 }

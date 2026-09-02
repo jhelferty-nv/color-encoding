@@ -2,5 +2,11 @@
     "schema_version": 1,
     "name": "color-encoding",
     "exports": ["src"],
-    "license_files": ["LICENSE"]
+    "license_files": ["LICENSE"],
+    "retractions": [
+        {
+            "version": "1.0.0",
+            "reason": "Truncated Rec. 709 luma weights"
+        }
+    ]
 }
